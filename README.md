@@ -1,58 +1,60 @@
-# My Token Project
+# Samson's Token Project
 
 ## Table of Contents
 
-- [Description](#description)
-- [Installing](#installing)
-- [Contract Details](#contract-details)
+- [Overview](#overview)
+- [Installation](#installation)
+- [Contract Overview](#contract-overview)
 - [Functions](#functions)
-- [Authors](#authors)
+- [Contributors](#contributors)
 - [License](#license)
 
-## Description
+## Overview
 
-This repository contains the contract called myToken.sol
+Welcome to the Samson's Token project repository. In this repository, you will find the `myToken.sol` contract, which serves as the foundation for a versatile and customizable ERC-20-like token. It offers essential features, including token minting and burning, balance queries, and access to token details such as name, abbreviation, and total supply. Below, you'll find a brief summary of the key aspects of this token project:
 
-The `MyToken` contract provides a minimalistic ERC-20-like token. With myToken, we can mint, and burn tokens, view the number of tokens an address has and also view the name, abbreviation and total supply of the token available in the contract. Here are the details below:
-
-- Token name: "SAMSON TOKEN"
-- Token abbreviation: "SMT"
-- Total supply
+- Token Name: "SAMSON TOKEN"
+- Token Abbreviation: "SMT"
+- Total Supply
 - Minting Function
 - Burning Function
 
-## Contract Details
+## Contract Overview
 
 - **Solidity Version**: 0.8.18
 - **License**: MIT
-  
-## Installing
-To deploy and interact with the `MyToken` contract, you can follow these steps:
 
-1. **Clone the Repository**: Clone this repository to your local environment.
+## Installation
 
-2. **Compile and Deploy**: Compile the contract using a Solidity compiler and deploy it to an Ethereum network of your choice. You can use development tools like Remix.
+To deploy and interact with the `myToken` contract, follow these steps:
 
-### Mint Function
+1. **Clone the Repository**: Begin by cloning this repository to your local environment.
 
-- **Description**: Mint new tokens and add them to the total supply and the minter's address balance.
-- **Parameters**:
-  - `_address` (data type: address): The address of the account minting the tokens.
-  - `_value` (data type: uint): The number of tokens to mint.
+2. **Compile and Deploy**: Use a Solidity compiler to compile the contract and deploy it to your chosen Ethereum network. You can leverage development tools like Remix for this purpose.
+
+## Functions
+
+### Minting Function
+
+- **Functionality**: This function enables the creation of new tokens and the addition of these tokens to both the total supply and the minter's address balance.
+- **Input Parameters**:
+  - `_address` (Type: address): It represents the address of the account responsible for the minting operation.
+  - `_value` (Type: uint): This parameter signifies the quantity of tokens to be minted.
 - **Visibility**: Public
 
-### Burn Function
+### Burning Function
 
-- **Description**: Burn a specific number of tokens from the sender's balance, reducing the total supply.
-- **Parameters**:
-- `_address` (data type: address): The address of the account burning the tokens.
-- `_value` (data type: uint): The number of tokens to burn.
+- **Functionality**: This function allows for the reduction of the total supply by burning a specified number of tokens from the sender's balance.
+- **Input Parameters**:
+  - `_address` (Type: address): It denotes the address of the account initiating the token burning.
+  - `_value` (Type: uint): This parameter specifies the quantity of tokens to be burned.
 - **Visibility**: Public
 
-## Authors
-Samson Ajulor  
-[@samsonajulor](https://twitter.com/samsonajulor)
+## Contributors
 
+- Samson Ajulor  
+  [Twitter: @samsonajulor](https://twitter.com/samsonajulor)
 
 ## License
-This project is learning purpose only.
+
+This project is intended for educational and learning purposes only.
